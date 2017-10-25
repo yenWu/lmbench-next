@@ -158,6 +158,7 @@ void	save_minimum();
 void	set_results(result_t *r);
 result_t* get_results();
 
+extern uint64 gettime(void);
 
 #define	BENCHO(loop_body, overhead_body, enough) { 			\
 	int 		__i, __N;					\
