@@ -3,6 +3,8 @@ SHELL = /bin/sh
 MAKE = make
 OS = $(shell scripts/os)
 
+.PHONY: build opt install doc clean info help
+
 build:
 	@mkdir -p bin/$(OS)
 	@$(MAKE) -C src
